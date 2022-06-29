@@ -1,2 +1,12 @@
-# nuxtjs-apache-docker
-Practice how to deploy nuxt js app using docker
+# nuxt-apache
+
+Apacheをリバースプロキシとして利用するNuxt.jsのサンプルです。
+
+## Build Setup
+
+``` bash
+$ docker-compose build
+$ docker-compose up
+```
+
+`http://localhost` にアクセスしてください。

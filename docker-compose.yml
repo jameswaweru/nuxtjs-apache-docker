@@ -1,0 +1,15 @@
+version: "3"
+services:
+  proxy:
+    image: httpd:alpine 
+    ports:
+      - "80:80"
+    volumes:
+      - ./httpd.conf:/usr/local/apache2/conf/httpd.conf
+  app:
+    build: .
+    expose:
+      - "2021"
+    ports:
+      - "2021:2021"
+  
